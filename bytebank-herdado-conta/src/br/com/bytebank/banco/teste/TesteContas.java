@@ -1,6 +1,14 @@
+package br.com.bytebank.banco.teste;
 
+import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.ContaPoupanca;
+import br.com.bytebank.banco.modelo.SacaException;
+import java.lang.*;
+
+//br.com.bytebank.banco.teste.TesteContas
 public class TesteContas {
 
+	//java.lang.String
 	public static void main(String[] args) throws SacaException {
 
 		ContaCorrente cc = new ContaCorrente(111, 111);

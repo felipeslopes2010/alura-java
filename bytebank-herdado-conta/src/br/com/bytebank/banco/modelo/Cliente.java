@@ -1,5 +1,12 @@
+package br.com.bytebank.banco.modelo;
 
-public class Cliente {
+/**
+ * Classe que representa um cliente no ByteBank
+ * 
+ * @author Felipe Santos Lopes
+ *@version 0.1
+ */
+public class Cliente extends Object{
 	
 	private String nome;
 	private String cpf;
