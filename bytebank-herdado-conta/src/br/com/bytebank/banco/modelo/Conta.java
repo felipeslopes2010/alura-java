@@ -34,17 +34,17 @@ public abstract class Conta implements Comparable<Conta>{
 	/**
 	 * Valor precisa ser menor ou igual ao saldo
 	 * @param valor
-	 * @throws SacaException
+	 * @throws SaldoInsuficienteException
 	 */
 
-	public void saca(double valor) throws SacaException {
+	public void saca(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor) {
-			throw new SacaException("Saldo: " + this.saldo + ", Valor: " + valor);
+			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
 		}
 		this.saldo -= valor;
 	}
 
-	public void transfere(double valor, Conta destino) throws SacaException {
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
 		this.saca(valor);
 		destino.deposita(valor);
 	}

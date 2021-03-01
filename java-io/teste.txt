@@ -1,0 +1,4 @@
+Este é um teste da Alura
+Estamos testando,
+Continuando teste...
+Finalizando teste

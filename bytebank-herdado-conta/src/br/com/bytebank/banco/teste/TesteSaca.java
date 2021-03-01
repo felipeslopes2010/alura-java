@@ -1,7 +1,7 @@
 package br.com.bytebank.banco.teste;
 
 import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.SacaException;
+import br.com.bytebank.banco.modelo.SaldoInsuficienteException;
 
 public class TesteSaca {
 
@@ -11,7 +11,7 @@ public class TesteSaca {
 		conta.deposita(200.0);
 		try {
 			conta.saca(210.0);
-		} catch (SacaException ex) {
+		} catch (SaldoInsuficienteException ex) {
 			System.out.println("Exception: " + ex.getMessage());
 
 		}
