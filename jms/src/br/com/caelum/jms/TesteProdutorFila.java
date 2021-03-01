@@ -32,11 +32,11 @@ public class TesteProdutorFila {
         MessageProducer producer = session.createProducer(fila);
         
       
-        for (int i = 0; i < 1000; i++) {
-        	Message message = session.createTextMessage("<pedido><id>" + i + "</id></pedido>");
-			producer.send(message);
-		}
-    	   
+//        for (int i = 0; i < 1000; i++) {
+//        	Message message = session.createTextMessage("<pedido><id>" + i + "</id></pedido>");
+//			producer.send(message);
+//		}
+//    	   
 
 		
       
